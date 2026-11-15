@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+<path>uh1.ac</path>
+
+
+<effect>
+    <inherits-from>Aircraft/Bell_UH-1H/Models/Effects/reflect-uber</inherits-from>
+ 
+	<object-name>fuselage</object-name>
+<object-name>elevatortrim</object-name>
+<object-name>frontdoorleft</object-name>
+<object-name>frontdoorright</object-name>
+<object-name>sidedoorleft</object-name>
+<object-name>sidedoorright</object-name>
+<object-name>slidedoorleft</object-name>
+<object-name>slidedoorright</object-name>
+<object-name>wirecutter_down</object-name>
+<object-name>wirecutter_up</object-name>
+<object-name>skid</object-name>
+<object-name>air</object-name>
+<object-name>leftside</object-name>
+<object-name>rightside</object-name>
+<object-name>leftslide</object-name>
+<object-name>rightslide</object-name>
+<object-name>supportlampes</object-name>
+<object-name>enginecowl</object-name>
+<object-name>enginecowl2</object-name>
+<object-name>enginecowl3</object-name>
+<object-name>enginecowl4</object-name>
+<object-name>enginetrous</object-name>
+  </effect>	
+
+
+<animation>
+<!-- Objets opaques -->
+<object-name>fuselage</object-name>
+<object-name>elevatortrim</object-name>
+<object-name>frontdoorleft</object-name>
+<object-name>frontdoorright</object-name>
+<object-name>sidedoorleft</object-name>
+<object-name>sidedoorright</object-name>
+<object-name>slidedoorleft</object-name>
+<object-name>slidedoorright</object-name>
+<object-name>wirecutter_down</object-name>
+<object-name>wirecutter_up</object-name>
+<object-name>air</object-name>
+<object-name>skid</object-name>
+<object-name>skid2</object-name>
+<object-name>leftside</object-name>
+<object-name>rightside</object-name>
+<object-name>leftslide</object-name>
+<object-name>rightslide</object-name>
+<object-name>supportlampes</object-name>
+<object-name>enginecowl</object-name>
+<object-name>attaches</object-name>
+<object-name>wiper_cplt</object-name>
+<object-name>wiper_plt</object-name>
+<object-name>charnieres</object-name>
+<object-name>frontcharnieres</object-name>
+<object-name>trous</object-name>
+
+<!-- Objets transparents -->
+<object-name>vitres</object-name>
+<object-name>frontdoorglasleft</object-name>
+<object-name>frontdoorglasright</object-name>
+<object-name>sidedoorglasleft</object-name>
+<object-name>sidedoorglasright</object-name>
+<object-name>slidedoorglasleft</object-name>
+<object-name>slidedoorglasright</object-name>
+<object-name>beacon</object-name>
+<object-name>taillighttrs</object-name>
+<object-name>lowerglass</object-name>
+</animation>
+
+
+
+<!--Working For Rembrandt-->
+
+
+<animation>
+<type>noshadow</type>
+<object-name>vitres</object-name>
+<object-name>frontdoorglasleft</object-name>
+<object-name>frontdoorglasright</object-name>
+<object-name>sidedoorglasleft</object-name>
+<object-name>sidedoorglasright</object-name>
+<object-name>slidedoorglasleft</object-name>
+<object-name>slidedoorglasright</object-name>
+<object-name>lowerglass</object-name>
+</animation>
+
+
+
+
+
+<effect>
+		<inherits-from>Aircraft/Bell_UH-1H/Models/Effects/glassout</inherits-from>
+		<object-name>vitres</object-name>
+	   <object-name>frontdoorglasleft</object-name>
+       <object-name>frontdoorglasright</object-name>
+       <object-name>sidedoorglasleft</object-name>
+       <object-name>sidedoorglasright</object-name>
+       <object-name>slidedoorglasleft</object-name>
+       <object-name>slidedoorglasright</object-name>
+     <object-name>lowerglass</object-name>
+     
+</effect>
+
+
+
+
+<!-- Removes reflective glass on internal views -->
+   <animation>
+        <type>select</type>
+      	<object-name>vitres</object-name>
+	   <object-name>frontdoorglasleft</object-name>
+       <object-name>frontdoorglasright</object-name>
+       <object-name>sidedoorglasleft</object-name>
+       <object-name>sidedoorglasright</object-name>
+       <object-name>slidedoorglasleft</object-name>
+       <object-name>slidedoorglasright</object-name>
+     <object-name>lowerglass</object-name>
+
+		<condition>
+            <not>
+            <property>sim/current-view/internal</property>
+            </not>
+        </condition>
+    </animation>
+
+
+
+
+
+
+
+</PropertyList>

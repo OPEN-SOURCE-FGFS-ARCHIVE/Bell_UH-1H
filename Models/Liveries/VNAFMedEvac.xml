@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">VNAF Med. Evac. Flt.</name>
+        <texture>Liveries/VNAFMedEvac.png</texture>
+	
+    
+      </livery>
+	  <bo105>
+	   <hdr>false</hdr>
+		<als>true</als>
+		</bo105>
+    </model>
+	<rendering>
+    <refl_correction type="string">-0.42</refl_correction>
+    </rendering>
+  </sim>
+
+</PropertyList>
